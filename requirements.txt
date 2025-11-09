@@ -1,7 +1,18 @@
-pandas==2.2.2,<3.0
-streamlit==1.36.0
-scikit-learn==1.5.2
+# Core
 numpy==2.2.0
-seaborn==0.13.0
-matplotlib==3.8.0
-plotly==5.24.1,<6
+pandas==2.2.2
+
+# Streamlit stack
+streamlit==1.36.0
+rich==13.9.4            # keep <14 to satisfy streamlit 1.36
+
+# ML stack
+scikit-learn==1.7.1     # matches your pickled model
+scipy==1.16.3           # compatible with py311 + numpy 2.x
+joblib==1.4.2
+threadpoolctl==3.6.0
+
+# Viz
+plotly==5.24.1
+matplotlib==3.9.2       # 3.9+ supports numpy 2.x
+seaborn==0.13.2
